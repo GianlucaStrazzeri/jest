@@ -1,14 +1,16 @@
 let products = []; // declaramos una variable products vacía
 let id = 0; // declaramos una variable id con valor 0
 
+
+
 function addProduct(nameOfProduct, price){
     return products.push({NombreProducto: nameOfProduct,
          Precio: price,
          ID:id++})
 }
 
-addProduct("Papel",2.25); addProduct("Espinacas",3.25); addProduct("Pollo",4.25); 
-addProduct("Rebanadas",5.25); addProduct("Sal",5.25); addProduct("verduras",5.25);
+//addProduct("Papel",2.25); addProduct("Espinacas",3.25); addProduct("Pollo",4.25); 
+//addProduct("Rebanadas",5.25); addProduct("Sal",5.25); addProduct("verduras",5.25);
 //console.log(products); //con este console.log veo el array entero después de añadir estos productos
 
 //Creo una función para remover un producto por su id, creo una constante que sea igual al id, imprimo en consola su index para encontrarlo y 
@@ -33,17 +35,7 @@ function updateProduct(id,nameOfProduct, price){//debería actualizar un product
     console.log(products)
 }
 
-updateProduct(3,"Banana",7.20);//inicializo función
+updateProduct(3,"Banana",7.20);//inicializo función, funciona pero al hacerle el update ya no existe el id 3
 
+module.exports= {addProduct,removeProduct,getProducts,updateProduct}
 
-
-
-
-
-
-
-
-
-module.exports= {addProduct}
-
-//{addProduct,removeProduct,getProduct,updateProduct}

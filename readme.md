@@ -41,11 +41,18 @@ Los tests deberían cubrir los siguientes casos:
 
 ## Paso 1: Configuración del proyecto
 
+
+npm i -D nodemon si quiero instalar algo en desarrollo sin subirlo
+npm unistall nodemon si me he dado cuenta de que en verdad no me sirve
+Utilizaremos npm test para lanzar jest y de esta formaverificar que los test funcionen
+
 Primero, necesitamos configurar nuestro proyecto. En la terminal, escribimos:
+Se recomienda poner npm i jest -dev para que en el package.json se entienda que no son dependencias necesarias para el funcionamiento de la aplicación sino que lo son solo para el desarrollo de la app, al poner el .test.js en un archivo jest entiende por si solo donde tiene que realizar los tests
 
 ```
 npm init -y
-npm i jest
+npm i jest 
+
 ```
 
 Piensa si jest, o revisa la documentación, la usaremos solo en desarrollo o producción
